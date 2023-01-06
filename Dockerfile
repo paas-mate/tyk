@@ -10,5 +10,6 @@ FROM shoothzj/base:go
 ENV TYK_HOME /opt/tyk
 
 COPY --from=compiler /tyk/tyk /opt/tyk/tyk
+COPY --from=compiler /tyk/templates /opt/tyk/templates
 
 WORKDIR /opt/tyk
